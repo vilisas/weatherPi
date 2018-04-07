@@ -1,0 +1,4 @@
+# generate (or beacon) weather packet for APRS every 10 mins.
+# 
+#
+*/10   *     * * *     root  /usr/bin/perl /etc/scripts/aprx_weather_packet.pl

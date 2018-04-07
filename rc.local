@@ -1,0 +1,25 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+#
+# to use i2c devices on raspberry pi uncomment line in /boot/config.txt
+# dtparam=i2c_arm=on
+# and for w1 sensors:
+# dtoverlay=w1-gpio
+#
+modprobe bmp280 bmp280_i2c
+echo bmp180 0x77 >/sys/class/i2c-adapter/i2c-1/new_device
+echo -n > /tmp/aprx_weather_packet.txt
+
+
+exit 0

@@ -1,0 +1,3 @@
+# execute wunderground.pl script and send data every 10 mins. 
+#
+*/10   *     * * *     nobody   /usr/bin/perl /etc/scripts/wunderground.pl
