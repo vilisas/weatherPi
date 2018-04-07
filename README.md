@@ -11,8 +11,7 @@ Jį galima naudoti raspberry Pi aplinkos temperatūros stebėjimui.
 failus wunderground.pl ir aprx_weather_packet.pl prieš naudojant reikia pasikoreguoti. Juose reikia nurodyti sensorių vietas,
 o wunderground.pl ir prisijungimo informaciją.
 
-`
-
+``
 +-------+
 |       |
 |DS18B20|
@@ -28,7 +27,7 @@ o wunderground.pl ir prisijungimo informaciją.
  |  +--------> GPIO4 (pin7)
  +-----------> GND   (pin9)
 
-`
+``
 Mano atveju sensorius prilituotas prie poros metrų ekranuoto dvigyslio laido, varža šalia raspberry Pi, sensorius įkištas
 į termovamzdelį ir vamzdelio galai apklijuoti klijais.
 Temperatūros sensorius turi būti lauke, pavėsyje, geriausia šiaurinėje pusėje.
